@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_Money"
+        android:icon="@drawable/wallet"
+        android:title="Money" />
+    <item
+        android:id="@+id/bottom_savings"
+        android:icon="@drawable/savings"
+        android:title="Savings" />
+    <item
+        android:title=""
+        android:enabled="true"/>
+    <item
+        android:id="@+id/bottom_expense"
+        android:icon="@drawable/expense"
+        android:title="Expense" />
+    <item
+        android:id="@+id/bottom_settings"
+        android:icon="@drawable/menu"
+        android:title="Menu" />
+</menu>
