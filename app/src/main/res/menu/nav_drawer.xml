@@ -1,62 +1,42 @@
-
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@=id/drawer_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:ignore="ExtraText">
+    xmlns:tools = "http://schemas.android.com/tools"
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <group
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@=id/toolbar"
-        android:background="@color/purple"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@=id/fragment_container"/>
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard"/>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@=id/bottomAooBar"
-        android:layout_gravity="bottom"
-        android:backgroundTint="@color/purple"
-        app:fabCradlemargin="10dp"
-        app:fabCradRoundedCornerRadious="50dp">
+        <item
+            android:id="@+id/Categories"
+            android:icon="@drawable/category"
+            android:title="Categories"/>
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@=id/bottom_navigation"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/bottom_menu"
-            android:background=""
+        <item
+            android:id="@+id/Budgets"
+            android:icon="@drawable/money"
+            android:title="Budgets"/>
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <item
+            android:id="@+id/Notif"
+            android:icon="@drawable/bell"
+            android:title="Notification"/>
+
+        <item
+            android:id="@+id/Limit"
+            android:icon="@drawable/limited"
+            android:title="Create Limit"/>
 
 
+    </group>
 
-
-
-
-
-</androidx.drawerlayout.widget.DrawerLayout>
-
-
-
-
+</menu>
