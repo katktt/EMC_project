@@ -17,5 +17,14 @@
         <item name = "postSplashScreenTheme">@style/Base.Theme.EMC</item>
 
     </style>
+
+    <style name="Base.Theme.NavigationAndBottom" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name = "colorPrimary">@color/purple</item>
+        <item name = "colorPrimaryVariant">@color/purple</item>
+        <item name = "colorOnPrimary">@color/purple</item>
+        <item name = "android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
 </resources>
 
