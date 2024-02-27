@@ -4,13 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.core.view.GravityCompat
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import com.alterpat.emc.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 
-class HomePage : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
+class HomePage1 : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener{
 
     private lateinit var fragmentManager: FragmentManager
     private lateinit var binding: ActivityMainBinding
@@ -21,20 +19,11 @@ class HomePage : AppCompatActivity(),NavigationView.OnNavigationItemSelectedList
         setContentView(binding.root)
     }
     override fun onNavigationItemSelected(item: MenuItem): Boolean{
-        when(item.itemId){
-            
-        }
+        TODO("Not yet implemented")
     }
-    override fun onBackPressed() {
-        if (binding.drawerlayout.isDrawerOpen(GravityCompat.START)) {
+
+    override fun onBackPressed(){
+        if (binding.drawerlayout.isDrawerOpen(GravityCompat.START)){
             binding.drawerLayout.closeDrawer(GravityCompat.START)
-        } else {
-            super.getOnBackPressedDispatcher().onBackPressed()
         }
-    }
-    private  fun openFragment(fragment: Fragment){
-        val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragment_container, fragment)
-        fragmentTransaction.commit()
-    }
 }
