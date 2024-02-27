@@ -16,9 +16,6 @@
             android:name=".LogOut"
             android:exported="false" />
         <activity
-            android:name=".HomePage"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.App.SplashScreen">
